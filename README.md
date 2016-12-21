@@ -1,2 +1,0 @@
-
-![image](pymap.png)
