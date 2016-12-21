@@ -13,15 +13,11 @@ table {float:left}
 ```
 
 
-<style>
-table {float:left}
-</style>
-
 
 ### Gerekli modüller
 
 |Modül adı|Kullanım alanı
-|-----------------
+---------|--------
 |nmap| Ağ analizi
 |pandas | Veri işleme
 |subprocess | Sistem
