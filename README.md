@@ -26,20 +26,6 @@ table {float:left}
 |io  | Veri Giriş/Çıkış
 |bson.code| MapReduce Kodlama Modülü
 
-
-### Modüllerin Kurulumu
-~~~
-Öncelikle sanal bir ortam oluşturmanız tavsiye edilir.
-mkdir pyedu
-cd pyedu
-virtualenv env -p python3
-source env/bin/activate
-pip3 install -r requirements.txt
-sudo apt-get install mongodb-org
-sudo service mongod start
-~~~
-
-
 ```python
 import nmap, pandas, subprocess, sqlite3
 from io import StringIO
