@@ -447,9 +447,24 @@ NoSQL bir veritabanına veri eklemek için sözlük veya BSON(JSON) veri yapıla
 Koleksiyonun insert(), insert_one(), insert_many() metodları ekleme işlemini gerçekleştiriyor. Verileri sorunsuzca girebilmek için anahtarları ve değerleri string tipine çeviren basit bir fonksiyon yazdık.
 ~~~
 
+```python
+def refactor(data):
+    """
+        Sözlükte recursive olarak dolaşarak anahtar ve değerleri stringe çevirir.
+        Bu fonksiyon liste vb. veri yapıları için düzenlenmeli!
+    """
+    new_dict = {}
+    for key, value in data.items():
+        if type(value) is dict:
+            new_dict[str(key)] = refactor(value)
+        else:
+            new_dict[str(key)] = str(value)
+    return new_dict 
+```
+
 
 ```python
-_id = table.insert_one(df.to_dict()).inserted_id
+_id = table.insert_one(refactor(df.to_dict())).inserted_id
 ```
 
 ### Veri çekme
