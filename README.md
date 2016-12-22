@@ -444,7 +444,8 @@ table = db.scan
 ### Veri ekleme
 ~~~
 NoSQL bir veritabanına veri eklemek için sözlük veya BSON(JSON) veri yapılarını kullanmamız gerekiyor.
-Koleksiyonun insert(), insert_one(), insert_many() metodları ekleme işlemini gerçekleştiriyor. Verileri sorunsuzca girebilmek için anahtarları ve değerleri string tipine çeviren basit bir fonksiyon yazdık.
+Koleksiyonun insert(), insert_one(), insert_many() metodları ekleme işlemini gerçekleştiriyor. 
+Verileri sorun olmadan girebilmek için anahtarları ve değerleri string tipine çeviren basit bir fonksiyon yazdık.
 ~~~
 
 ```python
