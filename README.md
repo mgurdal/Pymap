@@ -513,7 +513,7 @@ function () {
              apache_version = this.cpe[key].slice(-6);
              int_version = parseInt(apache_version[0]+apache_version[2]+apache_version.slice(-2));
              
-             vulnerable = int_version <= 2418 ?  "hacklenebilir" : "hacklenemez";
+             vulnerable = int_version == 2418 ?  "vulnerable" : "not_vulnerable";
             emit(this._id, vulnerable);
              
          }
@@ -551,12 +551,12 @@ for row in result.find():
 ```
 
     <class 'pymongo.collection.Collection'>
-    {'value': 'hacklenebilir', '_id': ObjectId('585aa113bc54f4166ad6d751')}
-    {'value': 'hacklenebilir', '_id': ObjectId('585abeb3bc54f40c8066928d')}
-    {'value': 'hacklenebilir', '_id': ObjectId('585abeefbc54f40c8066928f')}
-    {'value': 'hacklenebilir', '_id': ObjectId('585ad6dfbc54f40c80669291')}
-    {'value': 'hacklenebilir', '_id': ObjectId('585ae9a0bc54f40c80669292')}
-    {'value': 'hacklenebilir', '_id': ObjectId('585aef0cbc54f40c80669294')}
+    {'value': 'vulnerable', '_id': ObjectId('585aa113bc54f4166ad6d751')}
+    {'value': 'vulnerable', '_id': ObjectId('585abeb3bc54f40c8066928d')}
+    {'value': 'vulnerable', '_id': ObjectId('585abeefbc54f40c8066928f')}
+    {'value': 'vulnerable', '_id': ObjectId('585ad6dfbc54f40c80669291')}
+    {'value': 'vulnerable', '_id': ObjectId('585ae9a0bc54f40c80669292')}
+    {'value': 'vulnerable', '_id': ObjectId('585aef0cbc54f40c80669294')}
 
 
 
