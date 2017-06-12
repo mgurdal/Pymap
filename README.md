@@ -2,9 +2,7 @@
 
 # Pymap
 ## SDU Cyberlab
-Just used bunch of modules together. Nmap, pandas, sqlite, mongodb and so on.
-
-Here it is.
+Nmap, pandas, sqlite ve mongodb kullanarak ağ taramasının analiz edilmesi.
 
 ```python
 %%html
