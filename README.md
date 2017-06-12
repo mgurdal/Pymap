@@ -489,7 +489,7 @@ Google, Facebook, Twitter gibi çok büyük verilerle uğraşan kurumlar için M
 ![MapReduce](map_reduce_algorithm.jpg)
 ~~~
 Basitçe açıklamak gerekirse:
-Map verilerin daha küçük parçalar haline getirilmesine
+Map verilerin sadece bizim için önemli parçasının alınmasını,
 Reduce bu parçaların herhangi bir ifadeye göre filtrelenmesine denir. Örneğin toplama, mantıksal sorgulama.
 ~~~
 
